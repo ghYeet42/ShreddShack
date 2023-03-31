@@ -130,8 +130,105 @@
             right: -1%;
         }
 
-        @media only screen and (max-width: 400px) {
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
             
+            /*  scooter em lines  */
+
+            .popscooteritems {
+                position: relative;
+                max-width: 400px;
+                margin: 100px auto;
+                text-align: center;
+            }
+
+            .popscooteritems:before {
+                content:" ";
+                display: inline-block;
+                height: 2px;
+                width: 75px;
+                position: absolute;
+                top: 50%;
+                left: -9%;
+                background: rgb(0, 0, 0);
+            }
+
+            .popscooteritems:after {
+                content:" ";
+                height: 2px;
+                width: 75px;
+                background: rgb(0, 0, 0);
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: -9%;
+            }
+
+            /*  skateboard em lines  */
+
+            .popskateboarditems {
+                position: relative;
+                max-width: 500px;
+                margin: 100px auto;
+                text-align: center;
+            }
+
+            .popskateboarditems:before {
+                content:" ";
+                display: inline-block;
+                height: 2px;
+                width: 130px;
+                position: absolute;
+                top: 50%;
+                left: -12%;
+                background: rgb(0, 0, 0);
+            }
+
+            .popskateboarditems:after {
+                content:" ";
+                height: 2px;
+                width: 130px;
+                background: rgb(0, 0, 0);
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: -12%;
+            }
+
+            /*  bmx em lines  */
+
+            .popbmxitems {
+                position: relative;
+                max-width: 500px;
+                margin: 100px auto;
+                text-align: center;
+            }
+
+            .popbmxitems:before {
+                content:" ";
+                display: inline-block;
+                height: 2px;
+                width: 130px;
+                position: absolute;
+                top: 50%;
+                left: -1%;
+                background: rgb(0, 0, 0);
+            }
+
+            .popbmxitems:after {
+                content:" ";
+                height: 2px;
+                width: 130px;
+                background: rgb(0, 0, 0);
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: -1%;
+            }
+
+        }
+
+        @media only screen and (min-width: 601px) {
+
             /*  scooter em lines  */
 
             .popscooteritems {
@@ -224,7 +321,7 @@
                 top: 50%;
                 right: -1%;
             }
-
+            
         }
 
     </style>
@@ -239,7 +336,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info mx-5">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-info">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">The ShreddShack (logo)</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -260,11 +357,11 @@
                 <a class="nav-link" href="bmx.html">BMX</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="services.html">Contact Us</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item cart">
                 <a class="nav-link" href="cart.html">
-                    <i class="bi bi-cart-fill" id="cart"></i>
+                    <i class="bi bi-cart-fill"></i>
                 </a>
               </li>
               <li class="nav-item dropdown">
@@ -321,16 +418,125 @@
         </button>
       </div>
 
+<h4 class="text-center wow popscooteritems mx-6">POPULAR ITEMS SCOOTERS</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://cdn.shopify.com/s/files/1/0909/5324/products/Transit.jpg?v=1637093170" class="img-fluid img-thumbnail popscooteritemsimg1" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">North Transit Deck</h5>
+            <p class="card-text">This is North Scooter's Transit Deck.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$154.95</small>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://cdn.skatepro.com/product/440/drone-relic-v2-pro-scooter-t-bar-86.jpg" class="img-fluid img-thumbnail popscooteritemsimg2" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Drone T-Bars</h5>
+            <p class="card-text">These are Drone's T style bars.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$69.99</small>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://cdn.skatepro.com/product/440/root-honeycore-black-110mm-2-pack-pro-scooter-wheels-a6.jpg" class="card-img-top" class="img-fluid img-thumbnail" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Root Honeycores</h5>
+            <p class="card-text">These are Root Industries' Honeycore style wheels.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$64.99</small>
+            </div>
+        </div>
+        </div>
+    </div>
 
-<hr>
-<div class="container text-center">
-  <h4 class="text-center wow popscooteritems mx-6">POPULAR ITEMS SCOOTERS</h4>
-  <p>(Items would go here)</p>
-  <h4 class="text-center wow popskateboarditems mx-6">POPULAR ITEMS SKATEBOARDS</h4>
-  <p>(Items would go here)</p>
-  <h4 class="text-center wow popbmxitems mx-6">POPULAR ITEMS BMX</h4>
-  <p>(Items would go here)</p>
-</div>
+    <h4 class="text-center wow popskateboarditems mx-6">POPULAR ITEMS SKATEBOARDS</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://images.boardriders.com/global/element-products/all/default/hi-res/alyxd00238_element,f_ast_frt1.jpg" class="img-fluid img-thumbnail popskateboardimg1" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Star Wars Deck</h5>
+            <p class="card-text">This is a Star Wars Themed skate deck.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$64.95</small>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://m.media-amazon.com/images/I/61h5FuYG9EL._AC_SX679_.jpg " class="img-fluid img-thumbnail popskateboardimg2" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Spirfire Wheels</h5>
+            <p class="card-text">These are Spitfire's Formuala wheels.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$39.99</small>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://cdn.skatepro.com/product/440/hydroponic-south-park-complete-skateboard-jn.jpg" class="img-fluid" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">South Park Skateboard</h5>
+            <p class="card-text">This is a south park themed skateboard.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$104.99</small>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <h4 class="text-center wow popbmxitems mx-6">POPULAR ITEMS BMX</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://cdn.shopify.com/s/files/1/1356/4293/products/2022_devotion-panza-white-blue_1296x.jpg?v=1632593351" class="img-fluid img-thumbnail popbmximg1" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">Cult Devotion</h5>
+            <p class="card-text">This is Cult's Anthony Panza signature Devotion.</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$554.95</small>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS7mjPLt7lmvUtRebGZnFnfxdWwwsqJYIbp7pjdvFI1xCU9EP1XWxkxXCDxFHVM9qITjlhoQu3Gxw&usqp=CAc" class="img-fluid img-thumbnail popbmximg2" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">We The People Doomsayer Frame</h5>
+            <p class="card-text">This is one of the strongest BMX frames on the market!</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$399.99</small>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card h-100">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRlHRMxvLLoH4GVcHYBDYsm9Af7IN4BW_-JwG9e1I0Z8P3O_8a4Sg37uU1ELm4NMkZRKOsxulB3Qpc&usqp=CAc" class="img-fluid popbmximg2" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">BSD Freedom Bars</h5>
+            <p class="card-text">These are some of the best BMX bars on the market!</p>
+            </div>
+            <div class="card-footer">
+            <small class="text-body-secondary">$64.99</small>
+            </div>
+        </div>
+        </div>
+    </div>
 
 </body>
 </html>
