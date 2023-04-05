@@ -13,9 +13,22 @@
 
     <style>
         
-        img {
+        .carousel-item > img {
             margin-left: auto;
             margin-right: auto;
+            animation: bounce; /* referring directly to the animation's @keyframe declaration */
+            animation-duration: 2s; /* don't forget to set a duration! */
+        }
+        
+
+        .navbar-brand:hover {
+            text-decoration:  overline underline;
+            background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+            background-size: 100% 0.1em, 0 0.1em;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: 400ms;
         }
 
         .navbar-brand:hover {
@@ -367,11 +380,6 @@
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown link
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -415,7 +423,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
 
 <h4 class="text-center wow popscooteritems mx-6">POPULAR ITEMS SCOOTERS</h4>
     <div class="row row-cols-1 row-cols-md-3 g-4">
